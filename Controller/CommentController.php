@@ -100,7 +100,7 @@ class CommentController extends Controller
 	        }
 	    }
 	    
-	    return $this->render($this->getParameter('app_blog_templates')['comment']['create']);
+	    return $this->render($this->getParameter('app_blog.templates')['comment']['create']);
 	}
 	
 	/***
@@ -115,7 +115,7 @@ class CommentController extends Controller
 	        $apiClient = $this->get('puzzle_connect.api_client');
 	        $comment = $apiClient->pull('/blog/comments/'. $id);
 	        
-	        return $this->render($this->getParameter('app_blog_templates')['comment']['show'],[
+	        return $this->render($this->getParameter('app_blog.templates')['comment']['show'],[
 	            'comment' => $comment
 	        ]);
 	    }catch (BadResponseException $e) {

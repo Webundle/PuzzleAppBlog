@@ -32,7 +32,7 @@ class ArticleController extends Controller
 		    $articles = [];
 		}
 		
-		return $this->render($this->getParameter('app_blog_templates')['article']['list'],['articles' => $articles]);
+		return $this->render($this->getParameter('app_blog.templates')['article']['list'],['articles' => $articles]);
 	}
 	
     /***
@@ -54,7 +54,7 @@ class ArticleController extends Controller
             $article = $category = [];
         }
         
-        return $this->render($this->getParameter('app_blog_templates')['article']['show'], array(
+        return $this->render($this->getParameter('app_blog.templates')['article']['show'], array(
             'article' => $article,
             'category' => $category
         ));

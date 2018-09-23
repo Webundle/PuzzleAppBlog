@@ -43,7 +43,7 @@ class CategoryController extends Controller
             $categories = $currentCategory = $parent = [];
         }
 		
-        return $this->render($this->getParameter('app_blog_templates')['category']['list'],[
+        return $this->render($this->getParameter('app_blog.templates')['category']['list'],[
 		    'categories'      => $categories,
 		    'currentCategory' => $currentCategory,
 		    'parent'          => $parent
@@ -77,7 +77,7 @@ class CategoryController extends Controller
             $category = $articles = [];
         }
         
-        return $this->render($this->getParameter('app_blog_templates')['category']['list'], array(
+        return $this->render($this->getParameter('app_blog.templates')['category']['list'], array(
             'currentCategory' => $category,
             'childs' => $category['_embedded']['childs'] ?? null,
             'articles' => $articles,
