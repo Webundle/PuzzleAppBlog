@@ -1,0 +1,11 @@
+article:
+    resource: '@PuzzleAppBlogBundle/Resources/config/routing/article.yml'
+    prefix: '/articles'
+    
+category:
+    resource: '@PuzzleAppBlogBundle/Resources/config/routing/category.yml'
+    prefix: '/categories'
+
+comment:
+    resource: '@PuzzleAppBlogBundle/Resources/config/routing/comment.yml'
+    prefix: '/comments'

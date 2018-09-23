@@ -1,0 +1,4 @@
+services:
+#    puzzle_app_blog.example:
+#        class: Puzzle\App\BlogBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

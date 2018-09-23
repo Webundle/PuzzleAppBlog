@@ -1,0 +1,7 @@
+app_blog_article_list:
+    path:     /list
+    defaults: { _controller: 'PuzzleAppBlogBundle:Article:list' }
+    
+app_blog_article_show:
+    path:     /{id}
+    defaults: { _controller: 'PuzzleAppBlogBundle:Article:show' }

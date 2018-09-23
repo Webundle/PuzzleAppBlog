@@ -1,0 +1,8 @@
+# Category
+app_blog_category_list:
+    path:     /list
+    defaults: { _controller: 'PuzzleAppBlogBundle:Category:list' }
+
+app_blog_category_show:
+    path:     /{id}
+    defaults: { _controller: 'PuzzleAppBlogBundle:Category:show' }

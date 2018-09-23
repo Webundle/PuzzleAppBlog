@@ -1,0 +1,11 @@
+app_blog_comment_list:
+    path:     /list
+    defaults: { _controller: 'PuzzleAppBlogBundle:Comment:list' }
+
+app_blog_comment_approve:
+    path:     /{id}/approve
+    defaults: { _controller: 'PuzzleAppBlogBundle:Comment:approve' }
+    
+app_blog_comment_disapprove:
+    path:     /{id}/disapprove
+    defaults: { _controller: 'PuzzleAppBlogBundle:Comment:disapprove' }

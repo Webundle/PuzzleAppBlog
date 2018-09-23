@@ -1,0 +1,5 @@
+{% if categories is not empty %}
+    {% for category in categories %}
+        {{ dump(category) }}<br/>
+    {% endfor %}
+{% endif %}
