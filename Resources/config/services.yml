@@ -1,4 +1,7 @@
 services:
-#    puzzle_app_blog.example:
-#        class: Puzzle\App\BlogBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    # Twig extension
+    app.blog.twig.extension:
+        class: Puzzle\App\BlogBundle\Twig\PuzzleAppBlogExtension
+        arguments: [ '@request_stack', '@event_dispatcher', '@puzzle_connect.api_client' ]
+        tags:
+          - { name: twig.extension }

@@ -22,7 +22,7 @@ class ArticleController extends Controller
 	 */
     public function listAction(Request $request) {
 		try {
-		   /** @var Puzzle\ConectBundle\Service\PuzzleAPIClient $apiClient */
+		  /** @var Puzzle\ConectBundle\Service\PuzzleAPIClient $apiClient */
 		  $apiClient = $this->get('puzzle_connect.api_client');
 		  $articles = $apiClient->pull('/blog/articles');
 		}catch (BadResponseException $e) {
