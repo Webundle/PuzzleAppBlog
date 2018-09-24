@@ -28,11 +28,10 @@
 		"webundle/puzzle-admin-blog" : "^1.0"
 	},
 	"autoload" : {
-		"psr-0" : {
-			"Webundle\\Puzzle\\App\\BlogBundle" : ""
+		"psr-4" : {
+			"Puzzle\\App\\BlogBundle\\" : ""
 		}
 	},
-	"target-dir" : "Webundle/Puzzle/App/BlogBundle",
 	"extra" : {
 		"branch-alias" : {
 			"dev-master" : "1.0-dev"
